@@ -1,0 +1,77 @@
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.title {
+  font-size: 35px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0px 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  color: rgb(82, 82, 82);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+}
+
+.navbar li {
+  padding: 5px 25px;
+  display: inline;
+  letter-spacing: 1px;
+}
+.navbar li:hover {
+  display: inline-block;
+  color: aqua;
+  background: #0ef;
+  border-radius: 40px;
+  box-shadow: 0 0 5px #0ef;
+  color: #1f242d;
+  border: 2px solid #1f242d;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
