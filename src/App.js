@@ -1,12 +1,12 @@
 import "./App.css";
-import Top from "./Components/Header/Top";
-import Intro from "./Components/Intro/Intro";
+import MainAbout from "./MainAbout";
+import MainIntro from "./MainIntro";
 
 function App() {
   return (
     <div className="App">
-      <Top />
-      <Intro />
+      <MainIntro />
+      {/* <MainAbout /> */}
     </div>
   );
 }
